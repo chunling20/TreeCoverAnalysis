@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N tcc_sta
+#PBS -l nodes=8:ppn=1
+#PBS -j n
+#PBS -l walltime=27:00:00
+
+
+
+cd $PBS_O_WORKDIR
+
+NP=`cat $PBS_NODEFILE | wc -l`
+
+mpiexec -n $NP -hostfile $PBS_NODEFILE python treeCover_DEM_sta.py 
