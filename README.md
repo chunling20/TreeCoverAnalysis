@@ -6,6 +6,7 @@ This repository provides Python scripts to analyze long-term tree cover dynamics
 numpy, pandas, scipy, rasterio, mpi4py, gdal
 
 It is highly recommended to use Conda to create the environment, as GDAL and mpi4py have complex dependencies that are best managed by Conda.
+
 Example of successful environment creation
 
 ```bash
